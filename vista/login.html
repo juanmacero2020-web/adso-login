@@ -12,21 +12,22 @@
     <div>
         <h2>INICIAR SESION</h2>
 
-        <form id="FormRegistro" action="" method="post">
+        <form id="formLogin" action="" method="post">
 
             <div class="grupo-input">
-                <label>Ingresar el Email:</label>
-                <input type="email" id="email" required placeholder="pepito@gmail.com">
-            </div class="grupo-input">
+                <label for="email">Ingresar el Email:</label>
+                <input type="email" id="email" name="email" required placeholder="pepito@gmail.com">
+            </div>
 
             <div class="grupo-input">
-                <label>Ingresar Contraseña:</label>
-                <input type="password" id="contrasena" required placeholder="********">
+                <label for="password">Ingresar Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="********">
             </div>
 
             <div class="grupo-botones">
                 <button type="submit">Iniciar Sesion</button>
             </div>
+
             <div class="crear-cuenta">
                 <p>¿No tienes una cuenta? <a href="registro.html">Crear cuenta</a></p>
             </div>
@@ -35,6 +36,7 @@
 
     </div>
 
+    <script src="../controladores/login.js"></script>
 </body>
 
 </html>
